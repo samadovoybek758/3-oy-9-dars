@@ -1,1 +1,128 @@
-/*# sourceMappingURL=style.css.map */
+.header__continer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1B152B;
+  border-radius: 47px;
+  padding: 12px 20px;
+}
+.header__continer ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 16px;
+}
+.header__continer .gamburger {
+  display: none;
+}
+
+.list__item a {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.hero__continer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero__continer h1 {
+  font-size: 72px;
+  color: #1B152B;
+  margin-top: 64px;
+  margin-bottom: 16px;
+}
+.hero__continer span {
+  font-size: 16px;
+  color: #7A7D9C;
+}
+.hero__continer .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 16px;
+  margin-bottom: 48px;
+}
+.hero__continer .buttons button:first-child {
+  background-color: #1B152B;
+}
+.hero__continer .hero__img-2,
+.hero__continer .hero__img-3 {
+  display: none;
+}
+.hero__continer .hero__50k {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 131.5px;
+  margin-top: 48px;
+}
+.hero__continer .hero__50k h2 {
+  font-size: 48px;
+  color: #7F56D9;
+  font-family: "inter";
+}
+.hero__continer .hero__50k p {
+  font-size: 24px;
+  color: #7F56D9;
+  font-family: "manrope";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.continer {
+  max-width: 1058px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header__continer button, .hero__continer .buttons button {
+  font-size: 16px;
+  border-radius: 20px;
+  background-color: #7F56D9;
+  color: white;
+  padding: 8px 30px;
+  border: none;
+}
+
+@media screen and (max-width: 1280px) {
+  .continer {
+    width: 780px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .continer {
+    width: 592px;
+  }
+  .hero__img-2 {
+    display: inline-block;
+  }
+  .hero__img-1 {
+    display: none;
+  }
+}
+@media screen and (max-width: 320) {
+  .continer {
+    max-width: 280px;
+    width: 100%;
+  }
+  .hero__img-2 {
+    display: none;
+  }
+  .hero__img-3 {
+    display: block;
+  }
+  nav {
+    display: none;
+  }
+  .gamburger {
+    display: block;
+  }
+}/*# sourceMappingURL=style.css.map */

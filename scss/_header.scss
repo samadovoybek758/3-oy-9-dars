@@ -1,0 +1,32 @@
+.header__continer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1B152B;
+    border-radius: 47px;
+    padding: 12px 20px;
+    
+    
+
+
+    ul{
+        display: flex;
+        align-items: center;
+        list-style: none;
+        gap: 16px;
+    }
+
+    button{
+        @extend %button-template
+    }
+
+    .gamburger{
+        display: none;
+    }
+}
+
+.list__item a{
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+}
