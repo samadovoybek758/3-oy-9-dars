@@ -27,6 +27,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-family: "inter";
 }
 .hero__continer h1 {
   font-size: 72px;
@@ -56,8 +57,10 @@
 .hero__continer .hero__50k {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 131.5px;
+  justify-content: space-between;
+  background-color: #EFF0F6;
+  padding: 16px 48px;
+  border-radius: 16px;
   margin-top: 48px;
 }
 .hero__continer .hero__50k h2 {
@@ -90,6 +93,10 @@
   color: white;
   padding: 8px 30px;
   border: none;
+  font-family: "Inter";
+}
+.header__continer button:hover, .hero__continer .buttons button:hover {
+  background-color: #200853;
 }
 
 @media screen and (max-width: 1280px) {
@@ -97,32 +104,43 @@
     width: 780px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 779px) {
   .continer {
-    width: 592px;
-  }
-  .hero__img-2 {
-    display: inline-block;
-  }
-  .hero__img-1 {
-    display: none;
-  }
-}
-@media screen and (max-width: 320) {
-  .continer {
-    max-width: 280px;
+    max-width: 600px;
     width: 100%;
   }
-  .hero__img-2 {
+}
+@media screen and (max-width: 500px) {
+  .continer {
+    max-width: 450px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .continer a {
+    display: none;
+    visibility: hidden;
+  }
+  .continer .contact {
     display: none;
   }
-  .hero__img-3 {
+  .continer .gamburger {
     display: block;
+    color: #7F56D9;
   }
-  nav {
-    display: none;
+  .hero__continer h1 {
+    font-size: 24px;
   }
-  .gamburger {
+  .hero__continer span {
+    font-size: 12px;
+  }
+  .hero__continer .buttons .btn {
+    padding: 5px 11px;
+  }
+  .hero__50k {
+    display: flex;
+    flex-direction: column;
+  }
+  #check:checked ~ .nav {
     display: block;
   }
 }/*# sourceMappingURL=style.css.map */
