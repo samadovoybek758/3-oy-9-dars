@@ -28,36 +28,23 @@
 
 
 
-@media screen and (max-width:1280px) {
+@media screen and (max-width:1200px) {
     .continer{
-        width: 780px;
+        width: 960px;
     }
 }
-@media screen and (max-width:779px) {
+@media screen and (max-width:992px) {
     .continer{
-        max-width: 600px;
+        max-width: 720px;
         width: 100%;
     }
 }
-@media screen and (max-width:500px) {
+@media screen and (max-width:768px) {
     .continer{
-        max-width: 450px;
+        max-width: 540px;
         width: 100%;
         margin: 0 auto;
-        // background-color: #7F56D9;
-        a{
-            display: none;
-            visibility: hidden;
-        }
-        .contact{
-            display: none;
-        }
-        .gamburger{
-                display: block;
-                color: #7F56D9;
-       }
-       
-    }
+ 
     .hero__continer{  
         
         
@@ -80,12 +67,7 @@
         display: flex;
         flex-direction: column;
     }
-   #check:checked ~.nav {
-       display: block;
-   }
-   
-   
-    
+  
 }
 // @media screen and (max-width:290px) {
 //     .continer{

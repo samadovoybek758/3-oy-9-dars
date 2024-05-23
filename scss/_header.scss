@@ -24,10 +24,37 @@
         display: none;
 
     }
+
+    #check{
+        display: none;
+    }
 }
 
 .list__item a{
     color: white;
     font-size: 16px;
     text-decoration: none;
+}
+
+@media screen and (max-width:768px) {
+    
+    .header__continer{
+        background-color: green;
+
+        .gamburger{
+            display: block;
+        }
+        // .nav{
+        //     display: none;
+            
+        // }
+        .contact{
+            display: none;
+        }
+
+        #check:checked ~ .nav{
+            visibility: visible;
+        }
+        
+    }    
 }
