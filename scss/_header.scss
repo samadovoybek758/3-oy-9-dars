@@ -5,15 +5,17 @@
     background-color: #1B152B;
     border-radius: 47px;
     padding: 12px 20px;
-    
-    
+    font-family: "inter";
 
-
-    ul{
+    .nav{
         display: flex;
         align-items: center;
         list-style: none;
         gap: 16px;
+
+        &:hover{
+            color: black;
+        }
     }
 
     button{
@@ -39,21 +41,34 @@
 @media screen and (max-width:768px) {
     
     .header__continer{
-        background-color: green;
+        background-color: #1B152B;
+        position: relative;
 
-        .gamburger{
-            display: block;
+
+        .nav{
+            display: none;
+            position: absolute;
+            width: 100%;
+            top: 40px;
+            left: 0;
+
+            .list__item{
+                flex-direction: column;
+                background-color: #1B152B;
+                width: 100%;
+                padding: 20px;
+                text-align: center;
+            }
+
         }
-        // .nav{
-        //     display: none;
-            
-        // }
         .contact{
             display: none;
         }
-
+        .gamburger{
+            display: block;
+        }
         #check:checked ~ .nav{
-            visibility: visible;
+            display: block;
         }
         
     }    

@@ -22,65 +22,57 @@
 
     &:hover{
         background-color: #200853;
-        
     }
 }
-
-
-
 @media screen and (max-width:1200px) {
     .continer{
         width: 960px;
+
+        .rasm-1{
+            display: block;
+        }
+        .rasm-2{
+            display: none;
+        }
+        .rasm-3{
+            display: none;
+        }
     }
+    
 }
 @media screen and (max-width:992px) {
     .continer{
         max-width: 720px;
         width: 100%;
+
+        .rasm-3{
+            display: none;
+        }
+        .rasm-2{
+            display: block;
+        }
+        .rasm-1{
+            display: none;
+        }
     }
+   
+
 }
 @media screen and (max-width:768px) {
     .continer{
         max-width: 540px;
         width: 100%;
         margin: 0 auto;
- 
-    .hero__continer{  
-        
-        
-        h1{
-            font-size: 24px;
-        }
 
-        span{
-            font-size: 12px;
+        .rasm-1{
+            display: none;
         }
-
-        
-        .buttons{
-            .btn{
-                padding: 5px 11px;
-            }
+        .rasm-2{
+            display: none;
+        }
+        .rasm-3{
+            display: block;
         }
     }
-    .hero__50k{
-        display: flex;
-        flex-direction: column;
-    }
-  
-}
-// @media screen and (max-width:290px) {
-//     .continer{
-//         max-width: 150px;
-//         width: 100%;
-//     }
-//     .hero__img-2{
-//         display: none;
-//     }
-//     .hero__img-3{
-//         display:block;
-//     }
    
-    
-//    
-// }
+

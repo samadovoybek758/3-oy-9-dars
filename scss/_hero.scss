@@ -61,3 +61,31 @@
         }
     }
 }
+
+
+@media screen and (max-width:768px) {
+    .hero__continer{  
+        
+        
+        h1{
+            font-size: 24px;
+        }
+
+        span{
+            font-size: 12px;
+        }
+
+        
+        .buttons{
+            .btn{
+                padding: 5px 11px;
+                font-size: 10px;
+            }
+        }
+    }
+    .hero__50k{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    }
